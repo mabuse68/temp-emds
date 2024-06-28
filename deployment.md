@@ -2,22 +2,28 @@ This folder contains the artifacts used to deploy the data space technology stac
 
 In case the deployment is automated using infrastructure as code, a possible structure of an environment could be:
 
-* Environment (testing facility)
-  * main module
-  * modules
-  * configuration
-  * artifacts
+```
+.
+|-- Environment (testing facility)
+| |-- main module
+| |-- modules
+| |- configuration
+| |- artifacts
+```
 
 If the environment is deployed manually, instead:
-* Environment (testing facility)
-  * deployment logs
-    * Log1
-    * Log2
-    * ...
-  * scripts
-  * libs
-  * configurations
-  * artifacts
+```
+.
+|-- * Environment (testing facility)
+| |-- deployment logs
+| | |-- Log1
+| | |-- Log2
+| | |-- ...
+| |-- scripts
+| |-- libs
+| |-- configurations
+| |-- artifacts
+```
 
 In general, with the content of this folder, one should be able to replicate the deployment. In a not-so distant future the deployment assets will be streamlined to create a standard EMDS environment for each participant.
 
